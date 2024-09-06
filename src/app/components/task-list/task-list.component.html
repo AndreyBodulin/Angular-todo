@@ -1,0 +1,9 @@
+<div class="task">
+    <div>
+        <input (click)="changeTask()" class="input-check" type="checkbox" [(ngModel)]="completeTask">
+        <input (keyup.enter)="getRead()" (dblclick)="getWrite()" [(ngModel)]="taskName" [readonly]="readOnly"
+        [ngClass]="{'task-done' : completeTask, 'text-task' : !completeTask}">
+    </div>
+    <button (click)="removeTask()" class="delete">Del</button>
+</div>
+

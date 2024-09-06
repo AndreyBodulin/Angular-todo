@@ -1,0 +1,31 @@
+.footer-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    background-color: white;
+    height: 25px;
+}
+.clear-task{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color:inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.sort-btn{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color:inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.count-task{
+    margin-left: 15px;
+}

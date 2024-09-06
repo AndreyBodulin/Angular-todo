@@ -1,0 +1,49 @@
+
+.task{
+    height: 30px;
+    width: 480px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px, solid, black;
+    &:hover .delete{
+        display: inline;
+    }
+} 
+
+.text-task{
+    font-size: 24px;
+    font-family: inherit;
+    margin-left: 30px;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+.task-done{
+    font-size: 24px;
+    font-family: inherit;
+    margin-left: 30px;
+    text-decoration: line-through;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+.delete{
+    display: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color:inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.input-check{
+    transform: scale(1.3);
+}
