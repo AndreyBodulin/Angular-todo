@@ -12,7 +12,7 @@
    [taskName]="task.name"
    [id]="task.id"
    [ngClass]="{'active': task.visible, 'inactive': !task.visible}"
-   *ngFor="let task of todoList">
+   *ngFor="let task of toDoListService.todoList">
 </app-task-list>
 <app-footer-task
    [itemsLeft]="taskLeft"
