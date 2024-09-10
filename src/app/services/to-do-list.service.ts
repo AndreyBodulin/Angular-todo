@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TodoList } from '../types/todo';
+import { TaskData } from '../types/task';
 
 @Injectable({
     providedIn: 'root',
@@ -9,14 +10,15 @@ export class ToDoListService {
 
     todoList: TodoList[] = [];
 
-    public addTask(taskName: string, taskId: number, taskCompleted: boolean): void {
-        if (taskName !== '')
+    public addTask(task: TaskData): void {
+        if (task.name) {
             this.todoList.push({
-                'id': taskId,
-                'name': taskName,
-                'completeTask': taskCompleted,
+                'id': task.id,
+                'name': task.name,
+                'completeTask': task.completeTask,
                 visible: true,
             });
+        }
     }
 
     public removeTask(taskId: number): void {

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, QueryList, ViewChildren } from '@angular/core';
 import { TodoList } from './types/todo';
 import { ToDoListService } from './services/to-do-list.service';
+import { TaskData } from './types/task';
 
 @Component({
     selector: 'app-root',
@@ -34,7 +35,12 @@ export class AppComponent {
 
     public addTask(): void {
         this.taskId += 1;
-        this.toDoListService.addTask(this.taskName, this.taskId, this.allCompleteTask);
+        let task: TaskData = {
+            id: this.taskId,
+            name: this.taskName,
+            completeTask: this.allCompleteTask,
+        };
+        this.toDoListService.addTask(task);
         this.taskName = '';
         this.countTaskLeft();
     }
