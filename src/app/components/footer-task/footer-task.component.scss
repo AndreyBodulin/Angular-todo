@@ -1,4 +1,4 @@
-.footer-task{
+.footer-task {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,26 +6,26 @@
     background-color: white;
     height: 25px;
 }
-.clear-task{
+.clear-task {
     padding: 0;
     border: none;
     font: inherit;
-    color:inherit;
+    color: inherit;
     background-color: transparent;
     cursor: pointer;
     margin-right: 15px;
 }
 
-.sort-btn{
+.sort-btn {
     padding: 0;
     border: none;
     font: inherit;
-    color:inherit;
+    color: inherit;
     background-color: transparent;
     cursor: pointer;
     margin-right: 15px;
 }
 
-.count-task{
+.count-task {
     margin-left: 15px;
 }

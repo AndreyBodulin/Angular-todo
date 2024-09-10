@@ -8,17 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { FooterTaskComponent } from './components/footer-task/footer-task.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TaskListComponent,
-    FooterTaskComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent, TaskListComponent, FooterTaskComponent],
+    imports: [BrowserModule, AppRoutingModule, FormsModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
