@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output, QueryList, ViewChildren } from '@angular/core';
-import { TodoList } from './types/todo';
 import { ToDoListService } from './services/to-do-list.service';
 import { TaskData } from './types/task';
 
@@ -9,13 +8,11 @@ import { TaskData } from './types/task';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    constructor(public toDoListService: ToDoListService = new ToDoListService()) {}
+    constructor(public toDoListService: ToDoListService) {}
 
     title = 'todo';
     taskName: string = '';
-    todoList: TodoList[] = [];
     allCompleteTask: boolean = false;
-    idTasksForDelete: number[] = [];
     taskId: number = 0;
     taskLeft: number = 0;
 
@@ -34,7 +31,7 @@ export class AppComponent {
     }
 
     public addTask(): void {
-        this.taskId += 1;
+        this.taskId = Date.now();
         let task: TaskData = {
             id: this.taskId,
             name: this.taskName,
@@ -43,6 +40,7 @@ export class AppComponent {
         this.toDoListService.addTask(task);
         this.taskName = '';
         this.countTaskLeft();
+        console.log(this.taskId);
     }
 
     public removeTask(taskId: number) {

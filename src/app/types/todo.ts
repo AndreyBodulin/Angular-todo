@@ -1,5 +1,5 @@
 export interface TodoList {
-    'id': number;
+    id: number;
     'name': string;
     'completeTask': boolean;
     'visible': boolean;
