@@ -1,0 +1,26 @@
+.main-field {
+    display: flex;
+    height: 45px;
+    width: 480px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+.general-check {
+    transform: scale(1.3);
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}

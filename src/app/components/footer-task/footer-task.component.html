@@ -1,0 +1,9 @@
+<div class="footer-task">
+    <span class="count-task">{{ itemsLeft }} items left</span>
+    <div class="block-btn">
+        <button (click)="chooseAllTask()" class="sort-btn">All</button>
+        <button (click)="chooseActiveTask()" class="sort-btn">Active</button>
+        <button (click)="chooseCompletedTask()" class="sort-btn">Completed</button>
+    </div>
+    <button (click)="removeTask()" class="clear-task">Clear Completed</button>
+</div>
