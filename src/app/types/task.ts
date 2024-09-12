@@ -1,5 +1,5 @@
 export interface TaskData {
     id: number;
-    'name': string;
-    'completeTask': boolean;
+    name: string;
+    completeTask: boolean;
 }

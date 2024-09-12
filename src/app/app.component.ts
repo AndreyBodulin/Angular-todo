@@ -40,7 +40,6 @@ export class AppComponent {
         this.toDoListService.addTask(task);
         this.taskName = '';
         this.countTaskLeft();
-        console.log(this.taskId);
     }
 
     public removeTask(taskId: number) {
