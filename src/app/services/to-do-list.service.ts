@@ -13,9 +13,9 @@ export class ToDoListService {
     public addTask(task: TaskData): void {
         if (task.name) {
             this.todoList.push({
-                'id': task.id,
-                'name': task.name,
-                'completeTask': task.completeTask,
+                id: task.id,
+                name: task.name,
+                completeTask: task.completeTask,
                 visible: true,
             });
         }
